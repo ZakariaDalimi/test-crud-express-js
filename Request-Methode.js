@@ -11,7 +11,12 @@ app.get("/", (req, res) => {
   res.send("Got a Put request");
 });
 
-
+// POST METHODE
+app.post("/post", (req, res) => {
+    console.log("POST REQUEST SUCCESSFUL");
+    console.log(req.body);
+    res.send("Data POST Request Recieved");
+  });
 
 
 

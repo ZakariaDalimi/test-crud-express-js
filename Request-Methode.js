@@ -24,6 +24,13 @@ app.post("/put", (req, res) => {
   res.send("Data Updated Request Recieved");
 });
 
+// DELETE METHODE
+app.post("/delete", (req, res) => {
+    console.log("DELETE REQUEST SUCCESSFUL");
+    console.log(req.body);
+    res.send("Data Deleted Request Recieved");
+  });
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
